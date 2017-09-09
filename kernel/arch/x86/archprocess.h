@@ -33,8 +33,7 @@ extern "C" {
 		 */
 
 		/* NOTE: redondance entre regs.cr3 et pd->base->p_addr */
-		struct page_directory *pd;	
-
+		struct page_directory *pd;
 		list_head pglist;	/* Pages utilisees par le processus (exec, data, stack) */
 
 		char *b_exec;
@@ -51,5 +50,5 @@ extern "C" {
 		
 	} __attribute__ ((packed));
 }
+kernel/arch/x86/archprocess.h
 
-#endif
